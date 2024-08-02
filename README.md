@@ -18,6 +18,20 @@ associated to the trainings to extract relevant statistics in a csv format.
 Note the computation of statistics in the preprocessing stage is relatively time demanding for large datasets despite
 the use of PySpark.
 
+Install
+-------
+A [Conda](https://conda.io/miniconda.html) `environment.yml` is supplied with all the required libraries.
+
+~~~~
+$> git clone <repo url>
+$> cd <repo folder>
+$> conda env create -f environment.yml
+$> conda activate lib-invent
+(lib-invent) $> ...
+~~~~
+NOTE: Sometimes issues with the installation of tensorflow appear. It may need to be reinstalled manually.
+From here the general usage applies.
+
 Usage
 ------------------------------------------------------------------------------------------------------------------------
 The sole entry point for all runs is the input.py file.
